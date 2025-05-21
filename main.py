@@ -1,4 +1,4 @@
-from utills.controller import get_user_info, add_user, remove_user, update_user
+from utills.controller import get_user_info, add_user, remove_user, update_user, get_coordinates, get_map
 from utills.model import users
 
 
@@ -10,6 +10,7 @@ def main():
         print('2 - Add user')
         print('3 - remove user')
         print('4 - Update user')
+        print('5 - Prepare map')
         print('======================')
 
         choice = input('Enter your choice: ')
@@ -18,6 +19,7 @@ def main():
         if choice == '2': add_user(users)
         if choice == '3': remove_user(users)
         if choice == '4': update_user(users)
+        if choice == '5': get_map(users)
 
 
 if __name__ == '__main__':
